@@ -12,6 +12,13 @@ h2 {
 h3 {
     font-size: 35px;
 }
+h4 {
+    font-size: 30px;
+}
 p {
     font-size: 30px;
+}
+img {
+    max-height: 400px;
+    max-width: 100%;
 }
