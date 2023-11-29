@@ -3,3 +3,15 @@ body {
     color: #555555;
     font-size: 25px;
 }
+h1 {
+    font-size: 45px;
+}
+h2 {
+    font-size: 40px;
+}
+h3 {
+    font-size: 35px;
+}
+p {
+    font-size: 30px;
+}
