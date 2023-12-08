@@ -1,6 +1,6 @@
 body {
-    background-color: #000000;
-    color: #555555;
+    background-color: #0c0718;
+    color: #4e3e58;
     font-size: 25px;
     font-style: oblique;
 }
@@ -26,13 +26,20 @@ img {
 a {
     color: #555566;
 }
+/* The following are ID */
+#title {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #372a4b;
+    font-size: 47px;
+}
+
 /* The following are classes */
 .backlinks {
     color: #3c6197;
     font-size: 20px;
 }
 .ingridients {
-    color: #212241;
+    color: #29196e;
 }
 
 .facts,
