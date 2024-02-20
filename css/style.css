@@ -1,8 +1,11 @@
-body {
+* {
     background-color: #0c0718;
     color: #4e3e58;
     font-size: 25px;
     font-style: oblique;
+    box-sizing: border-box;
+    margin: 10px;
+    outline: 2px solid red;
 }
 h1 {
     font-size: 45px;
@@ -28,7 +31,7 @@ a {
 }
 /* The following are ID */
 #title {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, "Times New Roman", Times, serif;
     color: #372a4b;
     font-size: 47px;
 }
@@ -51,4 +54,7 @@ a {
 .steps {
     font-size: 33px;
     color: #3c6197;
+}
+.content-area {
+    max-width: 70%;
 }
