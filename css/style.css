@@ -1,11 +1,15 @@
 * {
-    background-color: #0c0718;
-    color: #4e3e58;
+    color: #1b0b25;
     font-size: 25px;
     font-style: oblique;
     box-sizing: border-box;
     margin: 10px;
+    
     /*outline: 2px solid red;*/
+}
+html {
+    background-image: repeating-linear-gradient(45deg,hsla(221, 100%, 60%, 1), hsla(4, 100%, 60%, 1) 10%, hsla(115, 100%, 60%, 1) 20%, hsla(221, 100%, 60%, 1) 30%);
+    margin: 0px;
 }
 h1 {
     font-size: 45px;
