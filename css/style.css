@@ -40,11 +40,44 @@ a {
     font-size: 47px;
 }
 
-/* The following are classes */
-.backlinks {
-    color: #3c6197;
-    font-size: 20px;
+/* Body layout */
+body {
+    display: grid;
+    grid-template-areas: "header" "content-area" "footer";
 }
+header {
+    grid-area: header;
+    background-color: #160830;
+    padding: 10px;
+    text-align: center;
+}
+footer {
+    grid-area: footer;
+    background-color: #160830;
+    padding: 10px;
+    text-align: center;
+}
+.content-area {
+    grid-area: content-area;
+    display: flex;
+    justify-content: center;
+}
+
+.recipe-area {
+    flex: 4;
+}
+.side-bar {
+    flex: 1;
+    display: grid;
+    grid-template-areas: "quick-links" "social-media" "ads";
+    grid-gap: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.quick-links {
+    grid-area: quick-links;
+}
+
 .ingridients {
     color: #29196e;
 }
@@ -58,7 +91,4 @@ a {
 .steps {
     font-size: 33px;
     color: #3c6197;
-}
-.content-area {
-    max-width: 70%;
-}
+} 
