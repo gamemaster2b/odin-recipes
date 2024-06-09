@@ -1,5 +1,5 @@
 * {
-    color: #1b0b25;
+    color: hsla(270, 50%, 25%, 1);
     font-size: 25px;
     font-style: oblique;
     box-sizing: border-box;
@@ -8,7 +8,7 @@
     /*outline: 2px solid red;*/
 }
 html {
-    background: hsla(261, 71%, 11%, 1);
+    background: hsla(0, 0%, 0%, 1);
     margin: 0px;
 }
 h1 {
@@ -47,13 +47,11 @@ body {
 }
 header {
     grid-area: header;
-    background-color: #160830;
     padding: 10px;
     text-align: center;
 }
 footer {
     grid-area: footer;
-    background-color: #160830;
     padding: 10px;
     text-align: center;
 }
@@ -73,6 +71,7 @@ footer {
     grid-gap: 10px;
     padding: 10px;
     border-radius: 10px;
+    position: sticky;
 }
 .quick-links {
     grid-area: quick-links;
