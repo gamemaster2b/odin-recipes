@@ -3,8 +3,9 @@
     font-size: 25px;
     font-style: oblique;
     box-sizing: border-box;
-    margin: 10px;
-    
+    margin: 0;
+    padding: 0;
+
     /*outline: 2px solid red;*/
 }
 html {
@@ -27,13 +28,14 @@ p {
     font-size: 30px;
 }
 img {
-    max-height: 400px;
-    max-width: 100%;
+    height: auto;
+    width: auto;
+    max-width: 25vw;
 }
 a {
     color: #555566;
 }
-/* The following are ID */
+
 #title {
     font-family: Georgia, "Times New Roman", Times, serif;
     color: #372a4b;
@@ -44,6 +46,7 @@ a {
 body {
     display: grid;
     grid-template-areas: "header" "content-area" "footer";
+    margin: 10px;
 }
 header {
     grid-area: header;
@@ -57,21 +60,22 @@ footer {
 }
 .content-area {
     grid-area: content-area;
-    display: flex;
+    display: grid;
+    grid-template-areas:"left-side-bar recipe-area right-side-bar";
     justify-content: center;
 }
 
 .recipe-area {
-    flex: 4;
+    grid-area: recipe-area;
 }
-.side-bar {
-    flex: 1;
+.left-side-bar {
+    grid-area: left-side-bar;
     display: grid;
     grid-template-areas: "quick-links" "social-media" "ads";
-    grid-gap: 10px;
+    grid-gap: 20px;
     padding: 10px;
     border-radius: 10px;
-    position: sticky;
+    position: fixed;
 }
 .quick-links {
     grid-area: quick-links;
@@ -90,4 +94,16 @@ footer {
 .steps {
     font-size: 33px;
     color: #3c6197;
-} 
+}
+
+.image-text {
+    display: flex;
+}
+
+.image-text-image {
+    flex: 1;
+}
+
+.image-text-text {
+    flex: 6;
+}
