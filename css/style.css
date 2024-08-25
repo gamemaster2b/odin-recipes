@@ -76,6 +76,7 @@ footer {
     padding: 10px;
     border-radius: 10px;
     position: fixed;
+    margin: 50px;
 }
 .quick-links {
     grid-area: quick-links;
